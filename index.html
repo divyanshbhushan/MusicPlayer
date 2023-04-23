@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================META TAGS=============== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer by Divyansh</title>
+    <!-- =================LINKS================ -->
+    <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/resp.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- ================NAVBAR=============== -->
+    <nav class="navbar" id="navbar">
+        <div class="branding">
+            <img src="/Assets/logo-modified.png" alt="logo" class="logo">
+            <span class="brand-name">MusicPlayer by Divyansh</span>
+        </div>
+        <!-- <div class="search-cont">
+            <label for="search-box" id="search-label" class="search-label">Search: </label>
+            <input type="search" id="search-box" name="search-box" class="search-box">
+        </div> -->
+    </nav>
+        <!-- =================SONG CONT================ -->
+        <div class="song-cont">
+            <div class="song-list">
+                <div class="songItem">
+                    <img src="/Assets/song-banner.jpg" alt="song-banner" class="song-banner">
+                    <span class="songName"></span>
+                    <img src="/Assets/SVGs/play.svg" alt="play" id="1" class="play">
+                </div>
+                <div class="songItem">
+                    <img src="/Assets/song-banner.jpg" alt="song-banner" class="song-banner">
+                    <span class="songName"></span>
+                    <img src="/Assets/SVGs/play.svg" alt="play" id="2" class="play">
+                </div>
+                <div class="songItem">
+                    <img src="/Assets/song-banner.jpg" alt="song-banner" class="song-banner">
+                    <span class="songName"></span>
+                    <img src="/Assets/SVGs/play.svg" alt="play" id="3" class="play">
+                </div>
+                <div class="songItem">
+                    <img src="/Assets/song-banner.jpg" alt="song-banner" class="song-banner">
+                    <span class="songName"></span>
+                    <img src="/Assets/SVGs/play.svg" alt="play" id="4" class="play">
+                </div>
+            </div>
+            <!-- <div class="song-banner"></div> -->
+        </div>
+        <!-- ================PROGRESS BAR================ -->
+        <div class="progress-bar-cont" id="progress-bar">
+            <input type="range" name="bar" id="bar" value="0" min="0" max="100">
+            <div class="bottom">
+                <div class="songName">
+                    Kun Faya Kun
+                </div>
+            <div class="icons-cont">
+                <i class="fa-solid fa-2x fa-backward-step" id="nextSong"></i>
+                <i class="fa-solid fa-2x fa-play" id="play-pause"></i>
+                <i class="fa-solid fa-2x fa-forward-step" id="nextSong"></i>
+            </div>
+        </div>
+        </div>
+    <!-- ================SCRIPTS=============== -->
+    <script src="/js/script.js"></script>
+    <script src="/js/style.js"></script>
+    <script src="https://kit.fontawesome.com/116c781f77.js" crossorigin="anonymous"></script>
+</body>
+</html>

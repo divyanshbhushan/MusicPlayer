@@ -1,0 +1,116 @@
+/*===============NAVBAR============== */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    background-color: #000;
+    color: #ffffff;
+    position: sticky;
+    top: 0px;
+}
+.navbar > .branding{
+    display: flex;
+    align-items: center;
+}
+.navbar > .branding > .logo{
+    width: 3rem;
+    margin: 0 .5rem;
+}
+.navbar > .branding > .brand-name{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.navbar > .search-cont{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2rem;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: .3rem .6rem;
+}
+.navbar > .search-cont > .search-label{
+    padding: 0 .5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.navbar > .search-cont > .search-box{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.song-cont{
+    border: 2px solid white;
+    border-radius: 30px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    height: 70vh;
+    margin: 3rem auto;
+    padding: 1rem .5rem;
+    background-color: #0000007f;
+    overflow: auto;
+}
+.song-cont > .song-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    /* border: 2px solid white; */
+}
+.song-cont > .song-list > .songItem{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    /* border: 2px solid white; */
+    padding: .5rem ;
+}
+.song-cont > .song-list > .songItem > .song-banner{
+    filter: invert(20%);
+    width: 3rem;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 0 .5rem;
+}
+.song-cont > .song-list > .songItem > .songName{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 90%;
+}
+.song-cont > .song-list > .songItem > .play{
+    filter: invert(100%);
+    cursor: pointer;
+}
+.progress-bar-cont{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 5rem;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.progress-bar-cont > #bar{
+    width: 80vw;
+    cursor: pointer;
+    transition: 1ms;
+}
+.progress-bar-cont > .bottom{
+    display: flex;
+    align-items: center;
+}
+.progress-bar-cont > .bottom > .songName{
+    color: white;
+    font-size: 1.3rem;
+    text-align: start;
+}
+.progress-bar-cont > .bottom >.icons-cont > i{
+    cursor: pointer;
+    margin: 0 3rem;
+    color: white;
+}
