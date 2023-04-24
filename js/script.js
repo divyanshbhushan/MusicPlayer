@@ -5,13 +5,15 @@ let masterPlay = document.getElementById('play-pause')
 let progressBar = document.getElementById('bar')
 let songItem = Array.from(document.getElementsByClassName('songItem'))
 let songItemPlay = Array.from(document.getElementsByClassName('play'))
+let nextSong = document.getElementById('nextSong')
+let previousSong = document.getElementById('previousSong')
 // Songs
 
 let songs = [
-    {songName : "Kun Faya Kun", filePath: "Music/1.mp3"},
-    {songName : "Khali Salam Dua", filePath: "Music/2.mp3"},
-    {songName : "Masakali", filePath: "Music/3.mp3"},
-    {songName : "Wavin' Flag", filePath: "Music/4.mp3"},
+    {songName : "Kun Faya Kun", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/1.mp3"},
+    {songName : "Khali Salam Dua", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/2.mp3"},
+    {songName : "Masakali", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/3.mp3"},
+    {songName : "Wavin' Flag", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/4.mp3"},
 ]
 
 songItem.forEach((element, i)=>{
@@ -21,7 +23,7 @@ songItem.forEach((element, i)=>{
 songItemPlay.forEach((element)=>{
     element.addEventListener('click', (e)=>{
         index = parseInt(e.target.id)
-        audioElement.src = `Music/${index}.mp3`
+        audioElement.src = `https://divyanshbhushan.github.io/MusicPlayer/Music/${index}.mp3`
         audioElement.play()
         audioElement.currentTime = 0;
     })
@@ -51,3 +53,30 @@ audioElement.addEventListener('timeupdate', ()=>{
 progressBar.addEventListener('change', ()=>{
     audioElement.currentTime = progressBar.value * audioElement.duration/100;
 })
+nextSong.addEventListener('click', ()=>{
+    if (songIndex >=4 ){
+        songIndex = 0
+    }
+    else{
+        songIndex += 1;
+    }
+    audioElement.src = `https://divyanshbhushan.github.io/MusicPlayer/Music/${songIndex+1}.mp3`;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-play');
+    masterPlay.classList.add('fa-pause');
+});
+
+previousSong.addEventListener('click', ()=>{
+    if (songIndex <=0 ){
+        songIndex = 0
+    }
+    else{
+        songIndex -1 ;
+    }
+    audioElement.src = `https://divyanshbhushan.github.io/MusicPlayer/Music/${songIndex-1}.mp3`;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-play');
+    masterPlay.classList.add('fa-pause');
+});
