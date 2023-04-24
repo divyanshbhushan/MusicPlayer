@@ -110,7 +110,7 @@ progressBar.addEventListener('change', ()=>{
     audioElement.currentTime = progressBar.value * audioElement.duration/100;
 })
 nextSong.addEventListener('click', ()=>{
-    if (songIndex >=4 ){
+    if (songIndex >=52 ){
         songIndex = 0
     }
     else{
