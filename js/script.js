@@ -63,14 +63,6 @@ let songs = [
     {songName : "Tumhis Se (Unplugged)", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/50.mp3"},
     {songName : "Tumse Yu Milenge", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/51.mp3"},
     {songName : "You Are My Love - All The Best", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/52.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/53.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/54.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/55.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/56.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/57.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/58.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/59.mp3"},
-    {songName : "Khamoshiyan", filePath: "https://divyanshbhushan.github.io/MusicPlayer/Music/60.mp3"},
 ]
 
 songItem.forEach((element, i)=>{
