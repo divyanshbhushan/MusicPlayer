@@ -12,6 +12,6 @@
     font-family: var(--font-family);
 }
 body{
-    background: url(/Assets/bg-1.jpg);
+    background: url(https://divyanshbhushan.github.io/MusicPlayer/Assets/bg-1.jpg);
     background-size: cover;
 }
