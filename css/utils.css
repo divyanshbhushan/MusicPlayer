@@ -15,3 +15,6 @@ body{
     background: url(https://divyanshbhushan.github.io/MusicPlayer/Assets/bg-1.jpg);
     background-size: cover;
 }
+::-webkit-scrollbar{
+    width: 0;
+}

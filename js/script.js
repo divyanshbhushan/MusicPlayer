@@ -7,6 +7,7 @@ let songItem = Array.from(document.getElementsByClassName('songItem'))
 let songItemPlay = Array.from(document.getElementsByClassName('play'))
 let nextSong = document.getElementById('nextSong')
 let previousSong = document.getElementById('previousSong')
+let currentSongName = document.getElementById('currentSongName')
 // Songs
 
 let songs = [
@@ -82,6 +83,10 @@ songItemPlay.forEach((element)=>{
         audioElement.src = `https://divyanshbhushan.github.io/MusicPlayer/Music/${index}.mp3`
         audioElement.play()
         audioElement.currentTime = 0;
+        e.target.classList.remove('fa-play');
+        e.target.classList.add('fa-pause');
+        masterPlay.classList.remove('fa-play')
+        masterPlay.classList.add('fa-pause')
     })
 })
 // Play pause

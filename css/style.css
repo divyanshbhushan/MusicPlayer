@@ -82,8 +82,7 @@
     width: 90%;
 }
 .song-cont > .song-list > .songItem > .play{
-    filter: invert(100%);
-    cursor: pointer;
+    color: #ffffff;
 }
 .progress-bar-cont{
     position: absolute;
